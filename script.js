@@ -11,8 +11,9 @@ const pickTable = ["rock", "paper", "scissors"];
 
 function computerPick() {
     let rollPick = Math.floor(Math.random() * 3);
-    computerChoice = "" + pickTable[rollPick];
-    console.log("Computer choice: "+computerChoice);
+    //computerChoice = "" + pickTable[rollPick];
+    console.log("Computer choice: "+pickTable[rollPick]);
+    return "" + pickTable[rollPick];
 }
 function playerPick() {
     
@@ -20,8 +21,8 @@ function playerPick() {
 function playRound(playerInput, computerInput) {
     for(let i = 0; i<= pickTable.length -1 ; i++){
         if (pickTable[i] == document.querySelector("input").value){
-            playerChoice = pickTable[i];
-            console.log("Player choice: "+playerChoice);
+            playerInput = pickTable[i];
+            console.log("Player choice: "+playerInput);
         }
     }
     
