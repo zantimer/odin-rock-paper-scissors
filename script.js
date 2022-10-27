@@ -88,4 +88,5 @@ function playGame() {
     }
     let writeWinnerHere = document.querySelector('p');
     writeWinnerHere.textContent = winner;
+    resetScores();
 }
